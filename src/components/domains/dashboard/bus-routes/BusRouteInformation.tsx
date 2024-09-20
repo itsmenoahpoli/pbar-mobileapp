@@ -78,7 +78,7 @@ export const BusRouteInformation: React.FC<{
               </View>
             </View>
             <View className="flex flex-row justify-between items-center">
-              <Text className="text-xs text-gray-700">CUL TRANSPORT TERMINAL (EDSA)</Text>
+              <Text className="text-xs text-gray-700">PBAR Bus Terminal</Text>
             </View>
           </View>
         </View>
@@ -116,7 +116,7 @@ export const BusRouteInformation: React.FC<{
         </Text>
       </View>
 
-      {props.hasBuyButton ? (
+      {props.hasBuyButton && props.busRoute.busRouteTickets.length ? (
         <View className="w-full absolute bottom-3 px-2">
           <Pressable
             className="w-full h-[40px] bg-blue-600 justify-center items-center rounded-lg"

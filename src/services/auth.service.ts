@@ -39,7 +39,7 @@ export const AuthService = {
         SET_USER(user);
         SET_TOKEN(accessToken);
 
-        Toast.success("Welcome to CUL Transport App");
+        Toast.success("Welcome to PBAR Bus App");
         NavigationService.navigate("HOME_SCREEN");
       })
       .catch((error) => {
